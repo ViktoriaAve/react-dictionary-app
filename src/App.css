@@ -1,3 +1,8 @@
+.App body {
+  background-color: beige;
+}
+
+
 .App-footer {
   text-align: center;
   margin-top: 20px;
