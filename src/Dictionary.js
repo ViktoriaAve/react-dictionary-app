@@ -24,6 +24,7 @@ function handlePexelsResponse(response) {
         let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
         axios.get(apiUrl).then(handleResponse);
 
+        // documentation : https://www.pexels.com/api/documentation/#photos-search
         let pexelsApiKey = "563492ad6f91700001000001e2c1629981e0402db2c01ef17c30e30a";
         let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
         let headers = { Authorization: `Bearer ${pexelsApiKey}`};
